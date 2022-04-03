@@ -2,6 +2,9 @@ import Utility.Companion.timestampFormat
 
 class VolumeDeltaAnalyser () {
 
+    /*
+     * Accepts a list of deltas that are considered to match the criteria for analysis,and provides a text report.
+     */
     fun formatReports (outputReports: List<MeasurementDelta>) : String {
         var output = "Start Timestamp,End Timestamp,Start Volume,End Volume\n"
         outputReports.forEach { r ->

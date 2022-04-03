@@ -3,6 +3,9 @@ import java.io.File
 import java.time.LocalDateTime
 
 class VolumeDeltaFileReader {
+    /*
+     * Read the specified CSV file, check for errors, and provide a list of measurement objects.
+     */
     fun readMeasurementsFromFile(path: String) : List<Measurement>{
         val measurements = mutableListOf<Measurement>()
 
