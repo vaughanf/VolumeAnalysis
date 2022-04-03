@@ -23,6 +23,7 @@ class VolumeDeltaAnalyser () {
         val outputReports = mutableListOf<MeasurementDelta>()
         var currentDetection: MeasurementDelta? = null
         measurements.withIndex().forEach { m->
+            // Skip the first entry, as it'll be picked up as the previousEntry on the next step.
             if (m.index > 0){
                 val previousEntry = measurements[m.index-1]
                 val delta = MeasurementDelta(previousEntry, m.value)
