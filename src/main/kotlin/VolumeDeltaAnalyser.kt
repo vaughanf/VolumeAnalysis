@@ -1,7 +1,6 @@
-import java.time.format.DateTimeFormatter
+import Utility.Companion.timestampFormat
 
 class VolumeDeltaAnalyser () {
-    private val timestampFormat = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")
 
     fun formatReports (outputReports: List<MeasurementDelta>) : String {
         var output = "Start Timestamp,End Timestamp,Start Volume,End Volume\n"

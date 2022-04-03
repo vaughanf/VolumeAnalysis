@@ -1,9 +1,8 @@
+import Utility.Companion.timestampFormat
 import java.io.File
 import java.time.LocalDateTime
-import java.time.format.DateTimeFormatter
 
 class VolumeDeltaFileReader {
-    private val timestampFormat = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")
     fun readMeasurementsFromFile(path: String) : List<Measurement>{
         val measurements = mutableListOf<Measurement>()
 

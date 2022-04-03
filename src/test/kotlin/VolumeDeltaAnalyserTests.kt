@@ -1,11 +1,10 @@
+import Utility.Companion.timestampFormat
 import org.junit.jupiter.api.Test
 
 import org.junit.jupiter.api.Assertions.*
 import java.time.LocalDateTime
-import java.time.format.DateTimeFormatter
 
 internal class VolumeDeltaAnalyserTests {
-    private val timestampFormat = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")
     @Test
     fun analyseMeasurementsSampleOne() {
         val measurements = mutableListOf<Measurement>()
